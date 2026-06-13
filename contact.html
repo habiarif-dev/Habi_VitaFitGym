@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitaFit Gym - Contact Us</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    background:#1e1e1e;
+    padding:40px;
+    border-radius:10px;
+}
+
+h1{
+    text-align:center;
+    color:#ff4500;
+    margin-bottom:25px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+    height:150px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#ff4500;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#ff6a33;
+}
+
+.contact-info{
+    margin-top:25px;
+    text-align:center;
+    line-height:2;
+}
+
+.back{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:white;
+    text-decoration:none;
+    background:#ff4500;
+    padding:10px 15px;
+    border-radius:5px;
+}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="back">← Back</a>
+
+<div class="container">
+
+<h1>Contact Us</h1>
+
+<form onsubmit="sendMessage(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="text" placeholder="Subject" required>
+
+<textarea placeholder="Write Your Message..." required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+
+<div class="contact-info">
+<p>📧 info@vitafitgym.com</p>
+<p>📞 +92 3-- -------</p>
+<p>📍 Islamabad, Pakistan</p>
+</div>
+
+</div>
+
+<script>
+function sendMessage(e){
+e.preventDefault();
+alert("Thank you! Your message has been sent successfully.");
+}
+</script>
+
+</body>
+</html>

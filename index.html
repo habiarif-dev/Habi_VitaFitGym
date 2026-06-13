@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitaFit Gym</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.9);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff4500;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff4500;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#ff4500;
+    color:white;
+    padding:12px 30px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#ff6a33;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    color:#ff4500;
+}
+
+.about{
+    text-align:center;
+    line-height:1.8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e1e1e;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#ff4500;
+    margin-bottom:15px;
+}
+
+.plan{
+    border:2px solid #ff4500;
+}
+
+.price{
+    font-size:35px;
+    color:#ff4500;
+    margin:15px 0;
+}
+
+.testimonial{
+    font-style:italic;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:40px;
+}
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">VitaFit Gym</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#facilities">Facilities</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#plans">Plans</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Transform Your Body</h1>
+<p>Strong Body • Strong Mind • Strong Life</p>
+<a href="Register.html">
+    <button class="btn">Join Now</button>
+</a>
+</div>
+</section>
+
+<!-- About -->
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<div class="about">
+<p>
+VitaFit Gym is a modern fitness center dedicated to helping
+people achieve their health and fitness goals. Our expert trainers,
+advanced equipment, and motivating environment ensure every member
+gets the best workout experience.
+</p>
+</div>
+</section>
+
+<!-- Facilities -->
+<section id="facilities">
+<h2 class="section-title">Facilities</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Modern Equipment</h3>
+<p>Latest machines for strength and cardio training.</p>
+</div>
+
+<div class="card">
+<h3>Locker Rooms</h3>
+<p>Secure lockers and spacious changing rooms.</p>
+</div>
+
+<div class="card">
+<h3>Fitness Studio</h3>
+<p>Dedicated space for yoga and group classes.</p>
+</div>
+
+<div class="card">
+<h3>Nutrition Support</h3>
+<p>Guidance from fitness and nutrition experts.</p>
+</div>
+</div>
+</section>
+
+<!-- Services -->
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Personal Training</h3>
+<p>Customized workout programs from certified trainers.</p>
+</div>
+
+<div class="card">
+<h3>Weight Loss Programs</h3>
+<p>Special plans to help achieve fitness goals faster.</p>
+</div>
+
+<div class="card">
+<h3>Yoga Classes</h3>
+<p>Improve flexibility, balance, and mental wellness.</p>
+</div>
+
+<div class="card">
+<h3>Strength Training</h3>
+<p>Build muscle and increase endurance effectively.</p>
+</div>
+</div>
+</section>
+
+<!-- Membership Plans -->
+<section id="plans">
+<h2 class="section-title">Membership Plans</h2>
+
+<div class="cards">
+
+<div class="card plan">
+<h3>Basic</h3>
+<div class="price">$19/mo</div>
+<p>Gym Access</p>
+<p>Locker Facility</p>
+<p>Basic Support</p>
+<br>
+<button class="btn">Choose Plan</button>
+</div>
+
+<div class="card plan">
+<h3>Standard</h3>
+<div class="price">$39/mo</div>
+<p>Gym Access</p>
+<p>Group Classes</p>
+<p>Nutrition Guide</p>
+<br>
+<button class="btn">Choose Plan</button>
+</div>
+
+<div class="card plan">
+<h3>Premium</h3>
+<div class="price">$69/mo</div>
+<p>Personal Trainer</p>
+<p>All Classes</p>
+<p>Premium Support</p>
+<br>
+<button class="btn">Choose Plan</button>
+</div>
+
+</div>
+</section>
+
+<!-- Testimonials -->
+<section>
+<h2 class="section-title">Testimonials</h2>
+
+<div class="cards">
+<div class="card testimonial">
+"Best gym experience ever. Trainers are amazing!"
+<br><br><strong>- Shehroz</strong>
+</div>
+
+<div class="card testimonial">
+"I lost 12kg in 4 months thanks to VitaFit."
+<br><br><strong>- Muhammad</strong>
+</div>
+
+<div class="card testimonial">
+"Great environment and excellent equipment."
+<br><br><strong>- Ahmed</strong>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+<p>Email: info@vitafitgym.com</p>
+<p>Phone: +92 3-- -------</p>
+<p>Location: Islamabad, Pakistan</p>
+<br>
+<a href="contact.html">
+    <button class="btn">Get Started</button>
+</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 VitaFit Gym. All Rights Reserved.</p>
+</footer>
+
+<script>
+function joinGym(){
+    alert("Welcome to VitaFit Gym! Membership registration starts here.");
+}
+
+function contactGym(){
+    alert("Thank you for contacting VitaFit Gym. We'll reach out soon!");
+}
+</script>
+
+</body>
+</html>
